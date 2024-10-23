@@ -21,17 +21,26 @@ namespace testEnterprise2019
                 Console.WriteLine();
             } while (feu != 'R' && feu != 'r' && feu != 'O' && feu != 'o' && feu != 'V' && feu != 'v');
 
-            if (feu == 'R' || feu == 'r')
+            switch (feu)
             {
-                Console.WriteLine("S'arrêter");
-            }
-            else if (feu == 'O' || feu == 'o') 
-            {
-                Console.WriteLine("Ralentir");
-            }
-            else  
-            {
-                Console.WriteLine("Avancer");
+                case 'R':
+                    Console.WriteLine("S'arrêter");
+                    break;
+                case 'r':
+                    Console.WriteLine("S'arrêter");
+                    break;
+                case 'O':
+                    Console.WriteLine("Ralentir");
+                    break;
+                case 'o':
+                    Console.WriteLine("Ralentir");
+                    break;
+                case 'V':
+                    Console.WriteLine("Avancer");
+                    break;
+                case 'v':
+                    Console.WriteLine("Avancer");
+                    break;
             }
             Console.ReadLine();
         }
